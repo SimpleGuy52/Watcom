@@ -1,0 +1,17 @@
+﻿<span>
+    <span class="btn kpi-element" 
+          ng-class="{ 'kpi-element-active': isActive, 'disabled' : data.isNoData }">
+        <span ng-bind="data.name" class="kpi-text-length-max"></span>
+        <span class="kpi-text-length-max">
+            <span ng-bind="data.value"></span><span>&nbsp;</span><span ng-bind="getMeasurementDisplayName(data.measure)"></span>
+        </span>
+        <span class="kpi-text-length-max">
+            <span ng-if="data.trend != 0">
+                <i class="glyphicon glyphicon-chevron-up" style="color: green" ng-if="data.trend > 0"></i>
+                <i class="glyphicon glyphicon-chevron-down" style="color: red" ng-if="data.trend < 0"></i>
+            </span>
+            <span ng-bind="data.trendDisplay"></span>
+        </span>
+
+    </span>
+</span>

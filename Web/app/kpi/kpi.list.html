@@ -1,0 +1,41 @@
+﻿<div id="kpiList" cg-busy="{ promise: loadingPromise, delay: 1000, message: 'Загрузка данных...' }">
+</div>
+
+
+
+<!--<div cg-busy="{ promise: savingPromise, delay: 0, message: 'Сохранение данных...' }">
+    <div id="" class="container" ng-click="">
+        <div class="row">
+            <div class="container" style="width: 100%">
+                <span ng-repeat="k in kpies" kpi data="k"></span>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="container" style="width: 50%">
+                <span ng-repeat="k in kpies" kpi data="k" ng-if="$index < 3"></span>
+            </div>
+        </div>
+        <br />
+        <div class="container kpi-edit-form" ng-click="test()">
+            <span class="text-uppercase">Форма редактирования KPI</span>
+            <br />
+            <hr />
+            <input ng-model="selectedKpi.value.data.name"
+                   class="kpi-edit-input"
+                   placeholder="Название"
+                   maxlength="128" />
+            <br />
+            <input ng-model="selectedKpi.value.data.value"
+                   ng-change="onValueChanged()"
+                   class="kpi-edit-input"
+                   placeholder="Значение"
+                   maxlength="128"
+                   type="number" />
+        </div>
+        <br />
+        <div style="text-align: center;">
+            <button class="btn btn-default" ng-click="save()">Сохранить</button>
+        </div>
+    </div>
+</div>-->

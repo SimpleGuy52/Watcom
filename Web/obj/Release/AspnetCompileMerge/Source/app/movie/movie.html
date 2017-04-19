@@ -1,0 +1,31 @@
+﻿<div>
+    <div class="row">
+        <!--<h3>WebApi: <span ng-bind="webApi"></span></h3>-->
+        <h3>Cars</h3>
+    </div>
+
+    <div class="row">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Developer</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="c in cars">
+                <td>
+                    <span ng-bind="c.id"></span>
+                </td>
+                <td>
+                    <span ng-bind="c.name"></span>
+                </td>
+                <td>
+                    <span ng-bind="c.developer.name"></span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

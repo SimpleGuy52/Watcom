@@ -1,0 +1,42 @@
+﻿<div>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a ui-sref="root.home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="root.about">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="root.movie">
+                        Movie
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="root.files">
+                        Files
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="root.kpi">
+                        KPI
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <!--
+        Note the below ui-view attribute, not the id.
+        The content of the div will be replaces by
+        the view that is stated inside app.js
+        -->
+        <div id="ui-view" ui-view>
+        </div>
+    </div>
+</div>

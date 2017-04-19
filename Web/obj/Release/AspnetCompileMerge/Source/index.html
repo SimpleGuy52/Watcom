@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Simple App</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="styles/bootstrap-3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="styles/bootstrap-3.3.7/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="styles/custom/style.css" />
+    <link rel="stylesheet" href="styles/angular-busy.css" />
+</head>
+<body>
+    <div id="ui-view" ui-view>
+    </div>
+    
+    <!-- angular -->
+    <script src="scripts/angular-1.6.2/angular.js"></script>
+
+    <!-- other -->
+    <script src="scripts/jquery-3.1.1/jquery.min.js"></script> <!-- order imp: 1 -->
+    <script src="styles/bootstrap-3.3.7/js/bootstrap.min.js"></script><!-- order imp: 2 -->
+    <script src="scripts/angular-ui-router-0.4.2/ui-router.js"></script>
+    <script src="scripts/lodash-4.17.4/lodash.js"></script>
+    <script src="app/directives/paging.js"></script>
+    <script src="app/directives/angular-busy/angular-busy.js"></script>
+
+    <!-- our app -->
+    <script src="app/app.js"></script>
+    <script src="app/app.route.config.js"></script>
+    <script src="app/master/master.controller.js"></script>
+
+    <script src="app/services/webApi.service.js"></script>
+    <script src="app/services/file.extensions.service.js"></script>
+
+    <script src="app/about/about.controller.js"></script>
+    <script src="app/home/home.controller.js"></script>
+    <script src="app/movie/movie.controller.js"></script>
+    <script src="app/files/files.controller.js"></script>
+</body>
+</html>
